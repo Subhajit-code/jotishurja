@@ -33,7 +33,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // app.use(rateLimitmiddleware);
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://jyotishurja.com",
   credentials: true
 }));
 
@@ -55,4 +55,5 @@ app.listen(PORT, () => {
   connectDB();
   console.log(`Server is running on port ${PORT}`);
 });
+
 
